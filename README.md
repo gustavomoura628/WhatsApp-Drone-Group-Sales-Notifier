@@ -3,15 +3,15 @@ I want to buy a drone, and I'm in a local WhatsApp group for FPV drone enthusias
   
 This script will scrape all messages from the WhatsApp group, and process them with Gemini. Sales messages are then sent to my Telegram using a bot.  
 
-# Browser Setup  
-First, install violentmonkey on Firefox. Then add the violentmonkey.js script to it.  
-Now open WhatsApp Web. Check the addon to make sure that _WA-DOM-Tap-Continuous_ is active.  
-
 # Requirements  
 Just run  
 ```bash
 pip install -r requirements.txt
 ```
+
+# Browser Setup  
+First, install violentmonkey on Firefox. Then add the violentmonkey.js script to it.  
+Now open WhatsApp Web. Check the addon to make sure that _WA-DOM-Tap-Continuous_ is active.  
 
 In a terminal, run:  
 ```bash

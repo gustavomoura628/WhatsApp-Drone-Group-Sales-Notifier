@@ -7,6 +7,12 @@ This script will scrape all messages from the WhatsApp group, and process them w
 First, install violentmonkey on Firefox. Then add the violentmonkey.js script to it.  
 Now open WhatsApp Web. Check the addon to make sure that _WA-DOM-Tap-Continuous_ is active.  
 
+# Requirements  
+Just run  
+```bash
+pip install -r requirements.txt
+```
+
 In a terminal, run:  
 ```bash
 export FLASK_APP=test_hook.py
@@ -14,12 +20,6 @@ flask run -h 0.0.0.0 -p 5000
 ```  
 And then reload the WhatsApp page. Go to a group. You should see a bunch of messages appearing in your terminal.  
 
-
-# Requirements  
-Just run  
-```bash
-pip install -r requirements.txt
-```  
 
 # Environment Variables  
 Save these variables to a file called .env  
@@ -36,5 +36,6 @@ You can get a Gemini api key from `https://aistudio.google.com/app/apikey`
 # Running the app  
 In a terminal, run  
 ```bash
+source .env
 flask run -h 0.0.0.0 -p 5000
 ```
